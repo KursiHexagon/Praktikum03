@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adv HTML</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+        <legend>Form Data Diri</legend>
+            <input type="text" placeholder="ini bisa diisi (placeholder)"><br>
+            <input type="text" value="ini bisa diisi (value)"><br>
+            <input type="password"><br>
+            <input type="date"><br>
+            <input type="color"><br>
+            <input type="hidden"><br>
+            <input type="number"><br>
+            <input type="reset" value="Ulang">
+            <select>
+                <option hidden>Pilih Mata Kuliah</option>
+                <optgroup label="Semester 1">                
+                    <option value="IN1">Sibernetika</option>
+                    <option value="IN2">Computational Thinking</option>
+                </optgroup>
+                <optgroup label="Semester 2">
+                    <option value="IN3">Web Dasar</option>
+                    <option value="IN4">Pemrograman Dasar</option>
+                </optgroup>
+            </select>
+        </fieldset>
+    </form>
+
+    <p>Ini paragraf</p>
+    <p>Ini paragraf</p>
+    <h1 id="head1">Ini heading 1</h1>
+    <p>Ini contoh pindah<a href="https://www.google.com">halaman</a></p>
+
+    Ini pindah menggunakan gambar
+    <a href="https://www.facebook.com" target="_blank">
+        <img width="10%" height="10%" src="facebook.png">
+    </a>
+
+    <p>Balik lagi ke <a href="#head1">atas</a></p>
+
+    <!-- LIST TYPE -->
+    <!--
+    ul type
+    - square
+    - circle 
+    - disc
+    -->
+    <ul type="square">
+        <li>Data 1
+            <ul type="circle">
+                <li>Sample 1</li>
+                <li>Sample 2</li>
+            </ul>
+        </li>
+        <li>Data 5</li>
+        <li>Data 3</li>
+    </ul>
+
+    <ol type="i" start="51">
+        <li>Data 1</li>
+        <li>Data 5</li>
+        <li>Data 3</li>
+    </ol>
+
+    <!-- dt = data title, dd = data description -->
+    <dt>Coffee</dt>
+    <dd>Americano</dd>
+    <hr size="3px" color="black">
+
+    <h1>Table</h1>
+    <!-- TABLE -->
+     <table border="1" width="400px" height="300px" cellpadding="10" cellspacing="10">
+        <!-- tr = table row -->
+        <tr heigth="100px">
+            <th width="250px">Heading 1</th>
+            <th width="150px">Heading 2</th>
+        </tr>
+        <tr>
+            <td colspan="2">Baris 1 kolom 1</td>
+        </tr>
+
+        <tr>
+            <td rowspan="2">Baris 1 kolom 1</td>
+            <td>Baris 1 kolom 2</td>
+        </tr>
+
+        <tr>
+            <td>Baris 2 kolom 2</td>
+        </tr>
+     </table>   
+
+     <br>
+     <!-- Latihan Table -->
+
+     <table border="2" bgcolor="yellow" cellspacing="0" cellpading="0">
+        <tr>
+            <td rowspan="2" height="150px" width="150px">&nbsp;</td>
+            <td colspan="2" height="150px" width="150px">&nbsp;</td>
+            <td rowspan="2" height="150px" width="150px">&nbsp;</td>
+        </tr>
+        <tr>
+            <td height="350px" width="150px">&nbsp;</td>
+            <td height="350px" width="150px">&nbsp;</td>
+        </tr>
+        <tr>
+            <td height="150px" width="150px" colspan="2">&nbsp;</td>
+            <td height="150px" width="150px" colspan="2">&nbsp;</td>
+        </tr>
+     </table>
+</body>
+</html>
